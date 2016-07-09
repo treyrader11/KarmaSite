@@ -1,3 +1,117 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div {
+	border: solid 1px chocolate;
+}
+
 body {
-	background-color: #eee;
+	/*background-color: #eee;*/
+	font-family: 'Roboto', sans-serif;
+}
+
+button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: .25rem;
+	padding: 1rem 1.5rem;
+	display: block; /*because it's in "block", you can center by using "margin:0 auto";*/
+	margin: 0 auto; /*this centered due to block. but why no width??? */
+}
+
+.top-navigation {
+	background-color: #fff; /*the color white*/
+	
+}
+
+.top-navigation > .content {
+	width: 60.625rem;
+	height: 4.375rem;
+	margin: 0 auto;
+}
+
+.content {
+	/*padding: 0px 0.9375rem;*/
+	margin: 0 auto;
+	min-width: 37.5rem;
+	padding: 0 0.938rem;
+	
+}
+
+.introduction .content {
+	margin: 0 auto;
+	width: 60.625rem;
+
+}
+
+/*.content:hover {
+	background: aliceblue;
+	padding: 0 50px;
+}*/
+
+	
+.content > .logo {
+	/*margin-left: 0.875rem;*/
+	
+	height: 4.375rem;
+}
+
+.top-navigation .links {
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	color: #838994;
+	letter-spacing: 0.03em;
+	margin-top: 1.7rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1.5625rem;
+
+}
+
+.top-navigation .links .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+
+
+.introduction {
+	background-image: url("http://i.imgur.com/amc3Xgt.jpg?1");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+
+.introduction .buttons {
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
 }
