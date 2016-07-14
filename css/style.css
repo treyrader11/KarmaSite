@@ -228,5 +228,68 @@ li {
 	/*background: #eee;*/
 	position: relative;
 	padding: 0 0 0 2.438rem;
-	/*couldn't center the h5 element so I made it an ID and messed with the padding a bit*/
+	/*couldn't center the h5 element so I distinguished it by giving it an ID and tweaked the padding a bit*/
+}
+
+@media all and (max-width: 740px) {
+	.introduction .content {
+    	margin: 0 auto;
+    	width: 30rem;
+	}
+
+    .introduction h1 {
+    	margin-top: 17.5rem;
+    	font-size: 2.125rem;
+	}
+
+	.introduction h3 {
+		font-size: .9375rem;
+	}
+
+	.top-navigation .links {
+		font-size: .875rem;
+	}
+
+	.cases h2 {
+		font-size: 1.75rem;
+	}
+
+	.cases .devices h3 {
+    	font-weight: 400;
+    	font-size: 1.25rem;
+    	margin: 2.5rem 0px 1.875rem;
+	}
+
+	.introduction {
+    	/*background-image: url("http://i.imgur.com/amc3Xgt.jpg?1");*/
+    	background-position: center bottom;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	height: 37.938rem;
+    	overflow: auto;
+	}
+}
+
+@media all and (max-width: 880px) {
+	.top-navigation .links {
+		
+	}
+
+	.top-navigation > .content {
+    	width: 53.625rem;
+    	height: 4.375rem;
+    	margin: 0 auto;
+	}
+
+	.content {
+    	margin: 0 auto;
+    	min-width: 37.5rem;
+    	padding: 0px 7.938rem;
+	}
+}
+
+@media all and (max-width: 600px) {
+	ul.links {
+		padding: 0px 3.333rem;
+	}
 }
